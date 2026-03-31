@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name binki-atlassian-jira-rovodev-dismiss
-// @version 1.0.0
+// @version 1.0.1
 // @homepageURL https://github.com/binki/binki-atlassian-jira-rovodev-dismiss
 // @match https://*.atlassian.net/*
 // @require https://github.com/binki/binki-userscript-delay-async/raw/252c301cdbd21eb41fa0227c49cd53dc5a6d1e58/binki-userscript-delay-async.js
