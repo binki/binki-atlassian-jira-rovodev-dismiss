@@ -35,3 +35,13 @@
     }
   }
 })();
+
+// Modal dialog that shows up in the middle of the screen “Allow me to reintroduce myself” (see #4, https://i.imgur.com/mMX2YKI.png).
+(async () => {
+  const modal = await whenElementQuerySelectorAsync(document.body, 'section[data-testid="modal-dialog"]');
+  // Verify that this matches our expectation.
+  await whenElementQuerySelectorAsync(modal, 'video[src="https://dam-cdn.atl.orangelogic.com/CDNLink/AT12OAWR.mp4"]');
+  // Click the × button.
+  const button = await whenElementQuerySelectorAsync(modal, 'button[data-testid="modal-dialog--close-button"]');
+  button.click();
+})();
